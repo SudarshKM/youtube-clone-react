@@ -1,0 +1,26 @@
+
+
+
+
+
+
+@media (min-width:768px){
+    .colour{
+        color: brown;
+    }
+
+    .firstColumn{
+        position: fixed;
+    }
+
+    .secondColum{
+        position: relative;
+        left: 200px;
+    }
+}
+
+
+
+.dropDownItem :hover{
+background-color: #3e454d33;
+}
