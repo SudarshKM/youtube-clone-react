@@ -29,15 +29,15 @@ function VideoCard({displayVideo}) {
           height={"200"}
           style={{opacity:"0.94"}}
         />
-        <Card.Body className="bg-dark text-light">
-          <Card.Text>{displayVideo?.title}</Card.Text>
+        <Card.Body className=" text-light" >
+          <Card.Text style={{backgroundColor:"#12121200"}}>{displayVideo?.title}</Card.Text>
           
         </Card.Body>
       </Card>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header className="bg-dark text-light" closeButton>
-          <Modal.Title>{displayVideo?.title}</Modal.Title>
+          <Modal.Title style={{backgroundColor:"#21252900"}}>{displayVideo?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="bg-dark">
           <iframe

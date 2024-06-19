@@ -17,9 +17,26 @@
         position: relative;
         left: 200px;
     }
+
+   
 }
 
+@media (max-width:768px){
+ 
+    div{
+        width: 100%;
+    }
 
+   
+}
+
+#icon{
+    color: red;
+}
+
+#bg{
+    background-color: #21252900;
+}
 
 .dropDownItem :hover{
 background-color: #3e454d33;

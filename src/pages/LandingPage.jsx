@@ -14,8 +14,7 @@ import { faHeartPulse } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
 import GroupShorts from "../components/GroupShorts";
 
-import { Route, Routes } from "react-router-dom";
-import User from "./User";
+
 // import LandingPage from "./pages/LandingPage";
 
 function LandingPage() {
@@ -49,11 +48,11 @@ function LandingPage() {
       
       
       <div
-        className=" p-4 text-light"
-        style={{ backgroundColor: "rgba(18, 18, 18, 0.984)" }}
+        className="p-4 text-light"
+        style={{ backgroundColor: "rgba(18, 18, 18, 0.984)" ,width:"100%"}}
       >
         <Header />
-        <Row className="mt-4">
+        <Row className="w-100 mt-4">
           <Col lg={1} className="firstColumn">
             <LeftMenu />
           </Col>

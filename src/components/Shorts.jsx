@@ -31,14 +31,14 @@ function Shorts({displayVideo}) {
 
         />
         <Card.Body>
-          <Card.Text>{displayVideo?.title}</Card.Text>
+          <Card.Text className="text-light">{displayVideo?.title}</Card.Text>
           
         </Card.Body>
       </Card>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header  className="bg-dark text-light" closeButton>
-          <Modal.Title>{displayVideo?.title}</Modal.Title>
+          <Modal.Title style={{color:"whitesmoke"}}>{displayVideo?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body  className="bg-dark">
           <iframe

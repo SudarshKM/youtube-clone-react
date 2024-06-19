@@ -1,5 +1,6 @@
 import React from "react";
 import ProfileButton from "./ProfileButton";
+import '../App.css'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube, faSquareYoutube } from "@fortawesome/free-brands-svg-icons";
@@ -18,7 +19,7 @@ function Header() {
     <>
       <div className="w-100 d-flex justify-content-between align-items-center">
         <h4 className="d-flex alight-items-center ">
-          <FontAwesomeIcon icon={faYoutube} className="text-danger fs-3 me-1" />
+          <FontAwesomeIcon id="icon" icon={faYoutube} className="text-danger fs-3 me-1" />
           YouTube
         </h4>
         <div
@@ -32,7 +33,7 @@ function Header() {
               placeholder="   Search"
               style={{ width: "", border: "0" }}
             />
-            <FontAwesomeIcon className="fs-4" icon={faMagnifyingGlass} />
+            <FontAwesomeIcon className="fs-4 text-dark bg-light"  icon={faMagnifyingGlass} />
           </div>
           <div
             className=" btn btn-light btn-outline-dark rounded-circle d-flex justify-content-center align-items-center "
