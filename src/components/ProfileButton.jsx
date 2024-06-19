@@ -16,13 +16,14 @@ import { Link } from "react-router-dom";
 
 function ProfileButton() {
   return (
+    <>
     <Dropdown>
       <Dropdown.Toggle className="rounded-5" variant="dark" id="dropdown-basic">
         <FontAwesomeIcon id="bg" className="me-3" icon={faUser} />
       </Dropdown.Toggle>
 
-      <Dropdown.Menu className="bg-dark dropDownItem">
-        <Dropdown.Item className="text-light" href="#/action-1">
+      <Dropdown.Menu className=" bg-dark dropDownItem" style={{width:"300px"}}>
+        <Dropdown.Item className="w-100 text-light" href="#/action-1">
           <Link to={"/User"} style={{textDecoration:"none" , color:"white" ,backgroundColor:'#21252900'}}>Sudarsh K M : Sync On</Link>
         </Dropdown.Item>
         <hr className="text-light" />
@@ -72,6 +73,7 @@ function ProfileButton() {
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
+    </>
   );
 }
 

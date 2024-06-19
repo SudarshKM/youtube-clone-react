@@ -1,43 +1,36 @@
+@media (min-width: 768px) {
+  .colour {
+    color: brown;
+  }
 
+  .firstColumn {
+    position: fixed;
+  }
 
-
-
-
-
-@media (min-width:768px){
-    .colour{
-        color: brown;
-    }
-
-    .firstColumn{
-        position: fixed;
-    }
-
-    .secondColum{
-        position: relative;
-        left: 200px;
-    }
-
-   
+  .secondColum {
+    position: relative;
+    left: 200px;
+  }
 }
 
-@media (max-width:768px){
- 
-    div{
-        width: 100%;
-    }
+@media (max-width: 768px) {
+  div {
+    width: 100%;
+  }
 
-   
+  #searchBar {
+    visibility: hidden;
+  }
 }
 
-#icon{
-    color: red;
+#icon {
+  color: red;
 }
 
-#bg{
-    background-color: #21252900;
+#bg {
+  background-color: #21252900;
 }
 
-.dropDownItem :hover{
-background-color: #3e454d33;
+.dropDownItem :hover {
+  background-color: #3e454d33;
 }

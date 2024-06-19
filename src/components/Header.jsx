@@ -26,8 +26,9 @@ function Header() {
           className=" d-flex justify-content-center align-items-center flex-row"
           style={{ width: "35%" }}
         >
-          <div className=" form-control rounded-pill d-flex justify-content-center align-items-center flex-row">
+          <div id="searchBar" className=" form-control rounded-pill d-flex justify-content-center align-items-center flex-row">
             <input
+              
               className="form-control rounded-pill"
               type="text"
               placeholder="   Search"
