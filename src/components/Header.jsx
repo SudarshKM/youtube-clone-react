@@ -49,7 +49,7 @@ function Header() {
           </div>
         </div>
 
-        <div className="d-flex align-items-center">
+        <div className="d-flex align-items-center headerRightDiv">
           <FontAwesomeIcon className="me-4 fs-4" icon={faVideo} />
           <FontAwesomeIcon className="me-4 fs-4" icon={faBell} />
           {/* <FontAwesomeIcon className="me-4 fs-4" icon={faCircle} /> */}

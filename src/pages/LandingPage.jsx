@@ -48,11 +48,14 @@ function LandingPage() {
       
       
       <div
-        className="p-4 text-light"
+        className="w-100 p-4 text-light"
         style={{ backgroundColor: "rgba(18, 18, 18, 0.984)" ,width:"100%"}}
       >
-        <Header />
-        <Row className="w-100 mt-4">
+<div className="headerDiv w-100 p-2" >
+          <Header />
+  
+</div>  
+      <Row className="w-100 header">
           <Col lg={1} className="firstColumn">
             <LeftMenu />
           </Col>
