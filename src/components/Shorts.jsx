@@ -7,6 +7,8 @@ import { useState } from "react";
 import Modal from "react-bootstrap/Modal";
 
 import Card from "react-bootstrap/Card";
+import  "../App.css"
+
 
 function Shorts({displayVideo}) {
   //modal
@@ -38,7 +40,8 @@ function Shorts({displayVideo}) {
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header  className="bg-dark text-light" closeButton>
-          <Modal.Title style={{color:"whitesmoke"}}>{displayVideo?.title}</Modal.Title>
+
+          <Modal.Title className="" style={{color:"whitesmoke" ,backgroundColor:"#21252900"}}>{displayVideo?.title}</Modal.Title>
         </Modal.Header>
         <Modal.Body  className="bg-dark">
           <iframe
