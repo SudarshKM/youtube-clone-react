@@ -41,9 +41,12 @@
   #searchBar {
     visibility: hidden;
   }
+  .videoCard , .shortsCarousel{
+    margin-left: 20px;
+  }
 
   *{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 }
 

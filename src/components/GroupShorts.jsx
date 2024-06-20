@@ -26,7 +26,7 @@ function GroupShorts() {
       }, []);
   return (
     <>
-              <Row>
+              <Row className='w-100'>
 
        {videoDetails.map((item) => (
               <Col md={2}>{<Shorts displayVideo={item} />}</Col>

@@ -19,7 +19,7 @@ function VideoCard({displayVideo}) {
   
   return (
     <>
-      <Card style={{ width: "100%" ,height:"250px" , border:"0"}} className="mt-4 ">
+      <Card style={{ width: "100%" ,height:"250px" , border:"0" , overflowX:"visible"}} className="mt-4 w-100">
         <Card.Img
           className="rounded-3"
           onClick={handleShow}

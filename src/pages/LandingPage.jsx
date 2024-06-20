@@ -78,7 +78,7 @@ function LandingPage() {
 
             <Row>
               {videoDetails.map((item) => (
-                <Col md={3}>{<VideoCard displayVideo={item} />}</Col>
+                <Col className="videoCard" md={3}>{<VideoCard displayVideo={item} />}</Col>
               ))}
             </Row>
 
@@ -88,6 +88,7 @@ function LandingPage() {
             </h4>
             <Row>
               <Carousel
+                className="shortsCarousel"
                 activeIndex={index}
                 onSelect={handleSelect}
                 style={{ height: "550px" }}
