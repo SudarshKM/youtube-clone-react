@@ -13,12 +13,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeartPulse } from "@fortawesome/free-solid-svg-icons";
 import Carousel from "react-bootstrap/Carousel";
 import GroupShorts from "../components/GroupShorts";
-
-
-// import LandingPage from "./pages/LandingPage";
+import MobileLeftMenu from "../components/MobileLeftMenu";
 
 function LandingPage() {
   const [videoDetails, setVideoDetails] = useState([]);
+
+  const [displayWidth, setDisplayWidth] = useState("true");
 
   //carousel
   const [index, setIndex] = useState(0);
@@ -41,24 +41,38 @@ function LandingPage() {
 
   useEffect(() => {
     fetchData();
+    checkDisplay();
   }, []);
+
+  const checkDisplay = () => {
+    if (window.matchMedia("screen and (max-width: 768px)").matches) {
+      console.log("mobile");
+      setDisplayWidth("false");
+      console.log(displayWidth);
+    } else {
+      console.log("pc");
+      console.log(displayWidth);
+    }
+  };
 
   return (
     <>
-      
-      
       <div
-        className="w-100 m-4 text-light"
-        style={{ backgroundColor: "rgba(18, 18, 18, 0.984)" ,width:"100%"}}
+        className="w-100 p-4 text-light"
+        style={{ backgroundColor: "rgba(18, 18, 18, 0.984)", width: "100%" }}
       >
-<div className="headerDiv w-100"  >
+        <div className="headerDiv w-100">
           <Header />
-  
-</div>  
-      <Row className="w-100 header" >
+        </div>
+        <Row className="w-100 header">
           <Col lg={1} className="firstColumn">
-            <LeftMenu />
+            {window.matchMedia("screen and (min-width: 768px)").matches ? (
+              <LeftMenu />
+            ) : (
+              <MobileLeftMenu />
+            )}
           </Col>
+
           <Col className="secondColum" lg={10}>
             {/* <LandingPage/> */}
 

@@ -15,7 +15,7 @@ function VideoCard({displayVideo}) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  console.log(displayVideo?.title);
+  // console.log(displayVideo?.title);
   
   return (
     <>
