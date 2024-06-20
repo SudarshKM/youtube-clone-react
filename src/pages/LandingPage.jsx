@@ -104,7 +104,7 @@ function LandingPage() {
 
             <Row>
               {videoDetails.map((item) => (
-                <Col md={3}>{<VideoCard displayVideo={item} />}</Col>
+                <Col className="videoCard" md={3}>{<VideoCard displayVideo={item} />}</Col>
               ))}
             </Row>
           </Col>

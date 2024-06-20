@@ -17,7 +17,7 @@ import {
 function Header() {
   return (
     <>
-      <div className="w-100 d-flex justify-content-between align-items-center">
+      <div className="innerHeader w-100 d-flex justify-content-between align-items-center">
         <h4 className="d-flex alight-items-center ">
           <FontAwesomeIcon id="icon" icon={faYoutube} className="text-danger fs-3 me-1" />
           YouTube

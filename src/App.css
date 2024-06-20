@@ -44,6 +44,16 @@
   .videoCard , .shortsCarousel{
     margin-left: 20px;
   }
+  .headerDiv{
+    /* margin:0 30px ; */
+    /* margin-left: -50px; */
+   
+    position: relative;
+    right: 45px;
+  }
+  .innerHeader{
+   
+  }
 
   *{
     /* overflow-x: hidden; */
@@ -57,6 +67,7 @@
 
 #icon {
   color: red;
+  visibility: hidden;
 }
 
 #bg {
