@@ -54,6 +54,9 @@
   .innerHeader{
    
   }
+  #icon {
+    visibility: hidden;
+  }
 
   *{
     /* overflow-x: hidden; */
@@ -67,7 +70,6 @@
 
 #icon {
   color: red;
-  visibility: hidden;
 }
 
 #bg {
