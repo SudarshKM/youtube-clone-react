@@ -58,7 +58,7 @@ function LandingPage() {
   return (
     <>
       <div
-        className="w-100 p-4 text-light"
+        className="landingPage w-100 p-4 text-light"
         style={{ backgroundColor: "rgba(18, 18, 18, 0.984)", width: "100%" }}
       >
         <div className="headerDiv w-100">

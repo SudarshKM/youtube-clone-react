@@ -46,6 +46,11 @@
   }
 
   *{
+    /* overflow-x: hidden; */
+    /* padding: 15%; */
+  }
+
+  .landingPage {
     overflow-x: hidden;
   }
 }
